@@ -1,0 +1,26 @@
+\documentclass{standalone}
+\usepackage{tikz}
+\usepackage{graphics}
+
+\begin{document}
+
+\begin{tikzpicture}
+  \foreach \d in {3,2,1} {
+    \node at ( 5*\d, 0) 
+    {\includegraphics[width=5.4cm, trim=0 0 3cm 0, clip]{./ZrO2-new-0\d/BANDSdir/hole-bands-detail.pdf} };
+  }
+  \foreach \d in {6,5,4} {
+    \node at ( 5*\d -5*3, -5 )
+    { \includegraphics[width=5.4cm, trim=0 0 3cm 0, clip]{./ZrO2-new-0\d/BANDSdir/hole-bands-detail.pdf} };
+  }
+  \foreach \d in {9,8,7} {
+    \node at ( 5*\d -5*6, -10 ) 
+    { \includegraphics[width=5.4cm, trim=0 0 3cm 0, clip]{./ZrO2-new-0\d/BANDSdir/hole-bands-detail.pdf} };
+  }
+  \foreach \d in {12, 11, 10} {
+    \node at ( 5*\d -5*9, -15 )
+    { \includegraphics[width=5.4cm, trim=0 0 3cm 0, clip]{./ZrO2-new-\d/BANDSdir/hole-bands-detail.pdf} };
+  }
+\end{tikzpicture}
+\end{document}
+
