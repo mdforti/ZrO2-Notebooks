@@ -20,17 +20,17 @@
 WD=$(pwd)
 LOG=$WD/alldata.txt
 echo "28/05/2020 ==================== " > $LOG
-for dir in ZrO2-? ZrO2-??
+for dir in ZrO2-new-??
 do
   echo "" >> $LOG
   echo $dir
   banddir=$dir/BANDSdir
   echo $banddir  >> $LOG
   cd $banddir
-    7za x vasprun.7z
+    7za x vasprun.7z -y
     tar -xf inputs.tar.gz KPOINTS
     tar -xf OUT-OSZ-CON.tar.gz OUTCAR -O | grep "volume of cell" >> $LOG
-#    sumo-bandstats -f vasprun.xml
+    sumo-bandstats -f vasprun.xml
     sumo-bandplot -f vasprun.xml --prefix $dir --project Zr.d,O.p
     rm KPOINTS vasprun.xml
   cd $WD  
