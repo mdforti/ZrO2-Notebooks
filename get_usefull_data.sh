@@ -19,10 +19,12 @@
 #===============================================================================
 # 60.12  m_h: -0.588  band 23 (up)  [0.50, 0.50, 0.50] (A)  [0.00, 0.50, 0.50] (R)
 echo "Vol#mass#value#bandno#spin#from#fname#to#toname"
-for dir in ZrO2-new-??
+# for dir in ZrO2-new-??
+for i in 05 06 07 09 10
 do
-  sumolog=$dir/BANDSdir/sumo-bandstats.log
-  vol=$(tar -xf $dir/BANDSdir/OUT-OSZ-CON.tar.gz OUTCAR -O | grep volume| tail -1 | awk '{print $NF}' )
+  dir=ZrO2-new-$i
+  sumolog=$dir/BXXdir/sumo-bandstats.log
+  vol=$(tar -xf $dir/BXXdir/OUT-OSZ-CON.tar.gz OUTCAR -O | grep volume| tail -1 | awk '{print $NF}' )
 #   sed -n "/effective masses/,/^$/s/^\(.*\)|.*\([.*].*\).*->.*\([.*].*(.*)\)/$dir,\1,\2,\3/p" $sumolog # | cut -s -d\| -f1,3  \1\2
 # 1mass  2val  band  4no  5spin         f                    t
   #m_h: -0.588 | band 23 (up) | [0.50, 0.50, 0.50] (A) -> [0.00, 0.50, 0.50] (R)

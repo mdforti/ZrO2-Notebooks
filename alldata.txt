@@ -1,0 +1,41 @@
+28/05/2020 ==================== 
+
+ZrO2-new-10/BANDSdir
+  volume of cell :       81.17
+  volume of cell :       81.17
+/usr/bin/sumo-bandstats -f vasprun.xml
+Indirect band gap: 3.381 eV
+Direct band gap: 3.617 eV
+  Up:
+    k-point: [0.00, 0.00, 0.00]
+    k-point indices: 26, 27, 105, 106, 107, 108
+    Band indices: 24, 25
+  Down:
+    k-point: [0.02, 0.00, 0.00]
+    k-point indices: 28
+    Band indices: 24, 25
+
+Valence band maximum:
+  Energy: 1.906 eV
+  k-point: [0.27, 0.27, 0.00]
+  k-point location: between M-\Gamma
+  k-point indices: 92
+  Band indices: 24(Up)
+
+Conduction band minimum:
+  Energy: 5.287 eV
+  k-point: [0.00, 0.00, 0.00]
+  k-point location: \Gamma
+  k-point indices: 26, 27, 105, 106, 107, 108
+  Band indices: 25(Up)
+
+Using parabolic fitting of the band edges
+
+Hole effective masses:
+  m_h: -2.234 | band 24 (up) | [0.27, 0.27, 0.00] -> [0.00, 0.00, 0.00] (\Gamma)
+  m_h: -1.968 | band 24 (up) | [0.27, 0.27, 0.00] -> [0.50, 0.50, 0.00] (M)
+
+Electron effective masses:
+  m_e: 0.619 | band 25 (up) | [0.00, 0.00, 0.00] (\Gamma) -> [0.50, 0.00, 0.00] (X)
+  m_e: 0.653 | band 25 (up) | [0.00, 0.00, 0.00] (\Gamma) -> [0.50, 0.50, 0.00] (M)
+  m_e: 2.700 | band 25 (up) | [0.00, 0.00, 0.00] (\Gamma) -> [0.00, 0.00, 0.50] (Z)

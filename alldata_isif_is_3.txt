@@ -1,0 +1,408 @@
+28/05/2020 ==================== 
+
+ZrO2-?/BANDSdir
+
+ZrO2-00/BANDSdir
+  volume of cell :       70.36
+  volume of cell :       70.36
+/usr/bin/sumo-bandstats -f vasprun.xml
+Indirect band gap: 3.850 eV
+Direct band gap: 3.919 eV
+  Up:
+    k-point: [0.00, 0.00, 0.00]
+    k-point indices: 24, 25, 26, 27
+    Band indices: 23, 25
+  Down:
+    k-point: [0.00, 0.00, 0.00]
+    k-point indices: 24, 25, 26, 27
+    Band indices: 23, 25
+
+Valence band maximum:
+  Energy: 2.881 eV
+  k-point: [0.00, 0.00, 0.50]
+  k-point location: Z
+  k-point indices: 51, 52, 53, 54, 132
+  Band indices: 23, 24(Up)
+
+Conduction band minimum:
+  Energy: 6.731 eV
+  k-point: [0.00, 0.00, 0.00]
+  k-point location: gamma
+  k-point indices: 24, 25, 26, 27
+  Band indices: 25(Up), 25(Down)
+
+Using parabolic fitting of the band edges
+
+Hole effective masses:
+  m_h: -7.886 | band 23 (up) | [0.00, 0.00, 0.50] (Z) -> [0.00, 0.00, 0.00] (gamma)
+  m_h: -0.712 | band 23 (up) | [0.00, 0.00, 0.50] (Z) -> [0.00, 0.50, 0.50] (R)
+  m_h: -1.015 | band 23 (up) | [0.00, 0.00, 0.50] (Z) -> [0.50, 0.50, 0.50] (A)
+  m_h: -7.886 | band 24 (up) | [0.00, 0.00, 0.50] (Z) -> [0.00, 0.00, 0.00] (gamma)
+  m_h: -1.291 | band 24 (up) | [0.00, 0.00, 0.50] (Z) -> [0.00, 0.50, 0.50] (R)
+  m_h: -1.015 | band 24 (up) | [0.00, 0.00, 0.50] (Z) -> [0.50, 0.50, 0.50] (A)
+
+Electron effective masses:
+  m_e: 0.634 | band 25 (up) | [0.00, 0.00, 0.00] (gamma) -> [0.50, 0.00, 0.00] (X)
+  m_e: 2.301 | band 25 (up) | [0.00, 0.00, 0.00] (gamma) -> [0.00, 0.00, 0.50] (Z)
+  m_e: 0.634 | band 25 (down) | [0.00, 0.00, 0.00] (gamma) -> [0.50, 0.00, 0.00] (X)
+  m_e: 19.556 | band 25 (down) | [0.00, 0.00, 0.00] (gamma) -> [0.00, 0.00, 0.50] (Z)
+
+ZrO2-05/BANDSdir
+  volume of cell :       70.29
+  volume of cell :       70.29
+/usr/bin/sumo-bandstats -f vasprun.xml
+Indirect band gap: 3.850 eV
+Direct band gap: 3.920 eV
+  Up:
+    k-point: [0.00, 0.00, 0.00]
+    k-point indices: 24, 25, 26, 27
+    Band indices: 23, 25
+  Down:
+    k-point: [0.00, 0.00, 0.00]
+    k-point indices: 24, 25, 26, 27
+    Band indices: 23, 25
+
+Valence band maximum:
+  Energy: 2.885 eV
+  k-point: [0.00, 0.00, 0.50]
+  k-point location: Z
+  k-point indices: 51, 52, 53, 54, 132
+  Band indices: 23, 24(Up)
+
+Conduction band minimum:
+  Energy: 6.735 eV
+  k-point: [0.00, 0.00, 0.00]
+  k-point location: gamma
+  k-point indices: 24, 25, 26, 27
+  Band indices: 25(Up), 25(Down)
+
+Using parabolic fitting of the band edges
+
+Hole effective masses:
+  m_h: -7.786 | band 23 (up) | [0.00, 0.00, 0.50] (Z) -> [0.00, 0.00, 0.00] (gamma)
+  m_h: -0.712 | band 23 (up) | [0.00, 0.00, 0.50] (Z) -> [0.00, 0.50, 0.50] (R)
+  m_h: -1.018 | band 23 (up) | [0.00, 0.00, 0.50] (Z) -> [0.50, 0.50, 0.50] (A)
+  m_h: -7.786 | band 24 (up) | [0.00, 0.00, 0.50] (Z) -> [0.00, 0.00, 0.00] (gamma)
+  m_h: -1.299 | band 24 (up) | [0.00, 0.00, 0.50] (Z) -> [0.00, 0.50, 0.50] (R)
+  m_h: -1.018 | band 24 (up) | [0.00, 0.00, 0.50] (Z) -> [0.50, 0.50, 0.50] (A)
+
+Electron effective masses:
+  m_e: 0.630 | band 25 (up) | [0.00, 0.00, 0.00] (gamma) -> [0.50, 0.00, 0.00] (X)
+  m_e: 2.281 | band 25 (up) | [0.00, 0.00, 0.00] (gamma) -> [0.00, 0.00, 0.50] (Z)
+  m_e: 0.630 | band 25 (down) | [0.00, 0.00, 0.00] (gamma) -> [0.50, 0.00, 0.00] (X)
+  m_e: 19.620 | band 25 (down) | [0.00, 0.00, 0.00] (gamma) -> [0.00, 0.00, 0.50] (Z)
+
+ZrO2-10/BANDSdir
+  volume of cell :       70.30
+  volume of cell :       70.30
+/usr/bin/sumo-bandstats -f vasprun.xml
+Indirect band gap: 3.853 eV
+Direct band gap: 3.923 eV
+  Up:
+    k-point: [0.00, 0.00, 0.00]
+    k-point indices: 24, 25, 26, 27
+    Band indices: 23, 25
+  Down:
+    k-point: [0.00, 0.00, 0.00]
+    k-point indices: 24, 25, 26, 27
+    Band indices: 23, 25
+
+Valence band maximum:
+  Energy: 2.883 eV
+  k-point: [0.00, 0.00, 0.50]
+  k-point location: Z
+  k-point indices: 51, 52, 53, 54, 132
+  Band indices: 23, 24(Up)
+
+Conduction band minimum:
+  Energy: 6.736 eV
+  k-point: [0.00, 0.00, 0.00]
+  k-point location: gamma
+  k-point indices: 24, 25, 26, 27
+  Band indices: 25(Up), 25(Down)
+
+Using parabolic fitting of the band edges
+
+Hole effective masses:
+  m_h: -7.777 | band 23 (up) | [0.00, 0.00, 0.50] (Z) -> [0.00, 0.00, 0.00] (gamma)
+  m_h: -0.711 | band 23 (up) | [0.00, 0.00, 0.50] (Z) -> [0.00, 0.50, 0.50] (R)
+  m_h: -1.017 | band 23 (up) | [0.00, 0.00, 0.50] (Z) -> [0.50, 0.50, 0.50] (A)
+  m_h: -7.777 | band 24 (up) | [0.00, 0.00, 0.50] (Z) -> [0.00, 0.00, 0.00] (gamma)
+  m_h: -1.299 | band 24 (up) | [0.00, 0.00, 0.50] (Z) -> [0.00, 0.50, 0.50] (R)
+  m_h: -1.017 | band 24 (up) | [0.00, 0.00, 0.50] (Z) -> [0.50, 0.50, 0.50] (A)
+
+Electron effective masses:
+  m_e: 0.631 | band 25 (up) | [0.00, 0.00, 0.00] (gamma) -> [0.50, 0.00, 0.00] (X)
+  m_e: 2.279 | band 25 (up) | [0.00, 0.00, 0.00] (gamma) -> [0.00, 0.00, 0.50] (Z)
+  m_e: 0.631 | band 25 (down) | [0.00, 0.00, 0.00] (gamma) -> [0.50, 0.00, 0.00] (X)
+  m_e: 19.599 | band 25 (down) | [0.00, 0.00, 0.00] (gamma) -> [0.00, 0.00, 0.50] (Z)
+
+ZrO2-15/BANDSdir
+  volume of cell :       70.34
+  volume of cell :       70.34
+/usr/bin/sumo-bandstats -f vasprun.xml
+Indirect band gap: 3.855 eV
+Direct band gap: 3.925 eV
+  Up:
+    k-point: [0.00, 0.00, 0.00]
+    k-point indices: 24, 25, 26, 27
+    Band indices: 23, 25
+  Down:
+    k-point: [0.00, 0.00, 0.00]
+    k-point indices: 24, 25, 26, 27
+    Band indices: 23, 25
+
+Valence band maximum:
+  Energy: 2.878 eV
+  k-point: [0.00, 0.00, 0.50]
+  k-point location: Z
+  k-point indices: 51, 52, 53, 54, 132
+  Band indices: 23, 24(Up)
+
+Conduction band minimum:
+  Energy: 6.733 eV
+  k-point: [0.00, 0.00, 0.00]
+  k-point location: gamma
+  k-point indices: 24, 25, 26, 27
+  Band indices: 25(Up), 25(Down)
+
+Using parabolic fitting of the band edges
+
+Hole effective masses:
+  m_h: -7.767 | band 23 (up) | [0.00, 0.00, 0.50] (Z) -> [0.00, 0.00, 0.00] (gamma)
+  m_h: -0.710 | band 23 (up) | [0.00, 0.00, 0.50] (Z) -> [0.00, 0.50, 0.50] (R)
+  m_h: -1.016 | band 23 (up) | [0.00, 0.00, 0.50] (Z) -> [0.50, 0.50, 0.50] (A)
+  m_h: -7.767 | band 24 (up) | [0.00, 0.00, 0.50] (Z) -> [0.00, 0.00, 0.00] (gamma)
+  m_h: -1.303 | band 24 (up) | [0.00, 0.00, 0.50] (Z) -> [0.00, 0.50, 0.50] (R)
+  m_h: -1.016 | band 24 (up) | [0.00, 0.00, 0.50] (Z) -> [0.50, 0.50, 0.50] (A)
+
+Electron effective masses:
+  m_e: 0.632 | band 25 (up) | [0.00, 0.00, 0.00] (gamma) -> [0.50, 0.00, 0.00] (X)
+  m_e: 2.292 | band 25 (up) | [0.00, 0.00, 0.00] (gamma) -> [0.00, 0.00, 0.50] (Z)
+  m_e: 0.632 | band 25 (down) | [0.00, 0.00, 0.00] (gamma) -> [0.50, 0.00, 0.00] (X)
+  m_e: 17.794 | band 25 (down) | [0.00, 0.00, 0.00] (gamma) -> [0.00, 0.00, 0.50] (Z)
+
+ZrO2-20/BANDSdir
+  volume of cell :       70.39
+  volume of cell :       70.39
+/usr/bin/sumo-bandstats -f vasprun.xml
+Indirect band gap: 3.857 eV
+Direct band gap: 3.926 eV
+  Up:
+    k-point: [0.00, 0.00, 0.00]
+    k-point indices: 24, 25, 26, 27
+    Band indices: 23, 25
+  Down:
+    k-point: [0.00, 0.00, 0.00]
+    k-point indices: 24, 25, 26, 27
+    Band indices: 23, 25
+
+Valence band maximum:
+  Energy: 2.871 eV
+  k-point: [0.00, 0.00, 0.50]
+  k-point location: Z
+  k-point indices: 51, 52, 53, 54, 132
+  Band indices: 23, 24(Up)
+
+Conduction band minimum:
+  Energy: 6.728 eV
+  k-point: [0.00, 0.00, 0.00]
+  k-point location: gamma
+  k-point indices: 24, 25, 26, 27
+  Band indices: 25(Up), 25(Down)
+
+Using parabolic fitting of the band edges
+
+Hole effective masses:
+  m_h: -8.077 | band 23 (up) | [0.00, 0.00, 0.50] (Z) -> [0.00, 0.00, 0.00] (gamma)
+  m_h: -0.711 | band 23 (up) | [0.00, 0.00, 0.50] (Z) -> [0.00, 0.50, 0.50] (R)
+  m_h: -1.015 | band 23 (up) | [0.00, 0.00, 0.50] (Z) -> [0.50, 0.50, 0.50] (A)
+  m_h: -8.077 | band 24 (up) | [0.00, 0.00, 0.50] (Z) -> [0.00, 0.00, 0.00] (gamma)
+  m_h: -1.309 | band 24 (up) | [0.00, 0.00, 0.50] (Z) -> [0.00, 0.50, 0.50] (R)
+  m_h: -1.015 | band 24 (up) | [0.00, 0.00, 0.50] (Z) -> [0.50, 0.50, 0.50] (A)
+
+Electron effective masses:
+  m_e: 0.633 | band 25 (up) | [0.00, 0.00, 0.00] (gamma) -> [0.50, 0.00, 0.00] (X)
+  m_e: 2.300 | band 25 (up) | [0.00, 0.00, 0.00] (gamma) -> [0.00, 0.00, 0.50] (Z)
+  m_e: 0.633 | band 25 (down) | [0.00, 0.00, 0.00] (gamma) -> [0.50, 0.00, 0.00] (X)
+  m_e: 19.546 | band 25 (down) | [0.00, 0.00, 0.00] (gamma) -> [0.00, 0.00, 0.50] (Z)
+
+ZrO2-25/BANDSdir
+  volume of cell :       70.42
+  volume of cell :       70.42
+/usr/bin/sumo-bandstats -f vasprun.xml
+Indirect band gap: 3.859 eV
+Direct band gap: 3.928 eV
+  Up:
+    k-point: [0.00, 0.00, 0.00]
+    k-point indices: 24, 25, 26, 27
+    Band indices: 23, 25
+  Down:
+    k-point: [0.00, 0.00, 0.00]
+    k-point indices: 24, 25, 26, 27
+    Band indices: 23, 25
+
+Valence band maximum:
+  Energy: 2.868 eV
+  k-point: [0.00, 0.00, 0.50]
+  k-point location: Z
+  k-point indices: 51, 52, 53, 54, 132
+  Band indices: 23, 24(Up)
+
+Conduction band minimum:
+  Energy: 6.727 eV
+  k-point: [0.00, 0.00, 0.00]
+  k-point location: gamma
+  k-point indices: 24, 25, 26, 27
+  Band indices: 25(Up), 25(Down)
+
+Using parabolic fitting of the band edges
+
+Hole effective masses:
+  m_h: -8.067 | band 23 (up) | [0.00, 0.00, 0.50] (Z) -> [0.00, 0.00, 0.00] (gamma)
+  m_h: -0.710 | band 23 (up) | [0.00, 0.00, 0.50] (Z) -> [0.00, 0.50, 0.50] (R)
+  m_h: -1.014 | band 23 (up) | [0.00, 0.00, 0.50] (Z) -> [0.50, 0.50, 0.50] (A)
+  m_h: -8.067 | band 24 (up) | [0.00, 0.00, 0.50] (Z) -> [0.00, 0.00, 0.00] (gamma)
+  m_h: -1.312 | band 24 (up) | [0.00, 0.00, 0.50] (Z) -> [0.00, 0.50, 0.50] (R)
+  m_h: -1.014 | band 24 (up) | [0.00, 0.00, 0.50] (Z) -> [0.50, 0.50, 0.50] (A)
+
+Electron effective masses:
+  m_e: 0.633 | band 25 (up) | [0.00, 0.00, 0.00] (gamma) -> [0.50, 0.00, 0.00] (X)
+  m_e: 2.297 | band 25 (up) | [0.00, 0.00, 0.00] (gamma) -> [0.00, 0.00, 0.50] (Z)
+  m_e: 0.633 | band 25 (down) | [0.00, 0.00, 0.00] (gamma) -> [0.50, 0.00, 0.00] (X)
+  m_e: 19.523 | band 25 (down) | [0.00, 0.00, 0.00] (gamma) -> [0.00, 0.00, 0.50] (Z)
+
+ZrO2-30/BANDSdir
+  volume of cell :       70.49
+  volume of cell :       70.49
+/usr/bin/sumo-bandstats -f vasprun.xml
+Indirect band gap: 3.859 eV
+Direct band gap: 3.927 eV
+  Up:
+    k-point: [0.00, 0.00, 0.00]
+    k-point indices: 24, 25, 26, 27
+    Band indices: 23, 25
+  Down:
+    k-point: [0.00, 0.00, 0.00]
+    k-point indices: 24, 25, 26, 27
+    Band indices: 23, 25
+
+Valence band maximum:
+  Energy: 2.861 eV
+  k-point: [0.00, 0.00, 0.50]
+  k-point location: Z
+  k-point indices: 51, 52, 53, 54, 132
+  Band indices: 23, 24(Up)
+
+Conduction band minimum:
+  Energy: 6.719 eV
+  k-point: [0.00, 0.00, 0.00]
+  k-point location: gamma
+  k-point indices: 24, 25, 26, 27
+  Band indices: 25(Up), 25(Down)
+
+Using parabolic fitting of the band edges
+
+Hole effective masses:
+  m_h: -8.055 | band 23 (up) | [0.00, 0.00, 0.50] (Z) -> [0.00, 0.00, 0.00] (gamma)
+  m_h: -0.710 | band 23 (up) | [0.00, 0.00, 0.50] (Z) -> [0.00, 0.50, 0.50] (R)
+  m_h: -1.014 | band 23 (up) | [0.00, 0.00, 0.50] (Z) -> [0.50, 0.50, 0.50] (A)
+  m_h: -8.055 | band 24 (up) | [0.00, 0.00, 0.50] (Z) -> [0.00, 0.00, 0.00] (gamma)
+  m_h: -1.313 | band 24 (up) | [0.00, 0.00, 0.50] (Z) -> [0.00, 0.50, 0.50] (R)
+  m_h: -1.014 | band 24 (up) | [0.00, 0.00, 0.50] (Z) -> [0.50, 0.50, 0.50] (A)
+
+Electron effective masses:
+  m_e: 0.634 | band 25 (up) | [0.00, 0.00, 0.00] (gamma) -> [0.50, 0.00, 0.00] (X)
+  m_e: 2.293 | band 25 (up) | [0.00, 0.00, 0.00] (gamma) -> [0.00, 0.00, 0.50] (Z)
+  m_e: 0.634 | band 25 (down) | [0.00, 0.00, 0.00] (gamma) -> [0.50, 0.00, 0.00] (X)
+  m_e: 19.492 | band 25 (down) | [0.00, 0.00, 0.00] (gamma) -> [0.00, 0.00, 0.50] (Z)
+
+ZrO2-35/BANDSdir
+  volume of cell :       70.65
+  volume of cell :       70.65
+/usr/bin/sumo-bandstats -f vasprun.xml
+Indirect band gap: 3.854 eV
+Direct band gap: 3.922 eV
+  Up:
+    k-point: [0.00, 0.00, 0.00]
+    k-point indices: 24, 25, 26, 27
+    Band indices: 23, 25
+  Down:
+    k-point: [0.00, 0.00, 0.00]
+    k-point indices: 24, 25, 26, 27
+    Band indices: 23, 25
+
+Valence band maximum:
+  Energy: 2.845 eV
+  k-point: [0.00, 0.00, 0.50]
+  k-point location: Z
+  k-point indices: 51, 52, 53, 54, 132
+  Band indices: 23, 24(Up)
+
+Conduction band minimum:
+  Energy: 6.699 eV
+  k-point: [0.00, 0.00, 0.00]
+  k-point location: gamma
+  k-point indices: 24, 25, 26, 27
+  Band indices: 25(Up), 25(Down)
+
+Using parabolic fitting of the band edges
+
+Hole effective masses:
+  m_h: -8.037 | band 23 (up) | [0.00, 0.00, 0.50] (Z) -> [0.00, 0.00, 0.00] (gamma)
+  m_h: -0.709 | band 23 (up) | [0.00, 0.00, 0.50] (Z) -> [0.00, 0.50, 0.50] (R)
+  m_h: -1.012 | band 23 (up) | [0.00, 0.00, 0.50] (Z) -> [0.50, 0.50, 0.50] (A)
+  m_h: -8.037 | band 24 (up) | [0.00, 0.00, 0.50] (Z) -> [0.00, 0.00, 0.00] (gamma)
+  m_h: -1.314 | band 24 (up) | [0.00, 0.00, 0.50] (Z) -> [0.00, 0.50, 0.50] (R)
+  m_h: -1.012 | band 24 (up) | [0.00, 0.00, 0.50] (Z) -> [0.50, 0.50, 0.50] (A)
+
+Electron effective masses:
+  m_e: 0.636 | band 25 (up) | [0.00, 0.00, 0.00] (gamma) -> [0.50, 0.00, 0.00] (X)
+  m_e: 2.315 | band 25 (up) | [0.00, 0.00, 0.00] (gamma) -> [0.00, 0.00, 0.50] (Z)
+  m_e: 0.636 | band 25 (down) | [0.00, 0.00, 0.00] (gamma) -> [0.50, 0.00, 0.00] (X)
+  m_e: 19.448 | band 25 (down) | [0.00, 0.00, 0.00] (gamma) -> [0.00, 0.00, 0.50] (Z)
+
+ZrO2-40/BANDSdir
+  volume of cell :       70.70
+  volume of cell :       70.70
+/usr/bin/sumo-bandstats -f vasprun.xml
+Indirect band gap: 3.855 eV
+Direct band gap: 3.922 eV
+  Up:
+    k-point: [0.00, 0.00, 0.00]
+    k-point indices: 24, 25, 26, 27
+    Band indices: 23, 25
+  Down:
+    k-point: [0.00, 0.00, 0.00]
+    k-point indices: 24, 25, 26, 27
+    Band indices: 23, 25
+
+Valence band maximum:
+  Energy: 2.839 eV
+  k-point: [0.00, 0.00, 0.50]
+  k-point location: Z
+  k-point indices: 51, 52, 53, 54, 132
+  Band indices: 23, 24(Up)
+
+Conduction band minimum:
+  Energy: 6.694 eV
+  k-point: [0.00, 0.00, 0.00]
+  k-point location: gamma
+  k-point indices: 24, 25, 26, 27
+  Band indices: 25(Up), 25(Down)
+
+Using parabolic fitting of the band edges
+
+Hole effective masses:
+  m_h: -8.025 | band 23 (up) | [0.00, 0.00, 0.50] (Z) -> [0.00, 0.00, 0.00] (gamma)
+  m_h: -0.709 | band 23 (up) | [0.00, 0.00, 0.50] (Z) -> [0.00, 0.50, 0.50] (R)
+  m_h: -1.011 | band 23 (up) | [0.00, 0.00, 0.50] (Z) -> [0.50, 0.50, 0.50] (A)
+  m_h: -8.025 | band 24 (up) | [0.00, 0.00, 0.50] (Z) -> [0.00, 0.00, 0.00] (gamma)
+  m_h: -1.318 | band 24 (up) | [0.00, 0.00, 0.50] (Z) -> [0.00, 0.50, 0.50] (R)
+  m_h: -1.011 | band 24 (up) | [0.00, 0.00, 0.50] (Z) -> [0.50, 0.50, 0.50] (A)
+
+Electron effective masses:
+  m_e: 0.638 | band 25 (up) | [0.00, 0.00, 0.00] (gamma) -> [0.50, 0.00, 0.00] (X)
+  m_e: 2.312 | band 25 (up) | [0.00, 0.00, 0.00] (gamma) -> [0.00, 0.00, 0.50] (Z)
+  m_e: 0.638 | band 25 (down) | [0.00, 0.00, 0.00] (gamma) -> [0.50, 0.00, 0.00] (X)
+  m_e: 19.421 | band 25 (down) | [0.00, 0.00, 0.00] (gamma) -> [0.00, 0.00, 0.50] (Z)

@@ -1,0 +1,18 @@
+# En comresion, la masa longitudinal es M-A-M y la transversal es A-Z
+# el problema es que encuentra un maximo medio tirado a M y da masas 
+# enormes y distintas segun para que lado.
+# empiezo a mirar a partir del volumen de equilibrio
+# a partir de ese volumen, tengo la masa longitudinal sobre 
+# M \rightarrow \Gamma y la transversal sobre X-X', pero esta ultima 
+# no la calcula porque el segmento queda un poco descentrado. 
+# si veo que nocambia mucho, la puedo aproximar a la de algun volumen, sino
+# la tendre que calcular.
+# vol    hole_long(x-x')  hole_transv(m-g)   multiplicidad  electron_long(gamma-z) electron_long(gamma_x)
+5 70.12  -11.428          (-2.782+-2.799)/2  4               2.265                  (0.629+0.671)/2
+6 72.25  -9.150           (-3.016+-1.980)/2  4               2.356                  (0.630+0.671)/2 
+7 74.41  -8.365           (-2.386+-2.643)/2  4               2.441                  (0.674+0.635)/2 
+8 76.62  -7.188           (-2.076+-2.344)/2  4               2.490                  (0.623+0.659)/2
+9 78.88  -6.922           (-3.086+-1.487)/2  4               2.595                  (0.625+0.659)/2
+10 81.17 -6.588           (-2.234+-1.968)/2  4               2.700                  (0.653+0.619)/2
+
+	
