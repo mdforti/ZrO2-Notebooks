@@ -1,0 +1,70 @@
+\section{Introducción}
+Las masas efectivas de los electrones en un cristal pueden calcularse
+a partir de la relación de dispersión de su estructura de bandas, y depende 
+en general del mathbftor de onda. En los
+semiconductores más sencillos puede aproximarse esta relación 
+en las proximidades de los extremos por una
+relación parabólica
+\begin{equation}\label{EqParabolica}
+  E(\mathbf{k}) = E_0 + \dfrac{\hbar (\mathbf{k}-\mathbf{k_0})^2}{2 m^{*}}
+\end{equation}
+donde E es la energía de la banda para un punto $\mathbf{k}$ de la red recíproca, $\mathbf{k_0}$
+es 
+el punto donde se alcanza el extremo $E_0$ para la banda en cuestión, $\hbar$ es la constante de 
+Plank y $m^{*}$ es la masa en reposo del electrón. 
+
+Debe notarse sin embargo que dicha expresión supone isotropía respecto de la posición 
+de los extremos. En materiales anisotrópicos, la masa efectiva se considera una cantidad
+tensorial y suele calcularse en función del mathbftor de onda,
+
+\begin{equation}\label{EqTensorDefinition}
+  m_{ij}^{-1} = \frac{1}{\hbar}\dfrac{\partial^2 E}{\partial k_i  \partial k_j}
+\end{equation}
+
+En un problema real puede considerarse que las masas de los huecos pueden calcularse
+en el máximo de la banda de valencia más alta y la masa del electrón en el mínimo de la banda
+de conducción. 
+
+Los problemas anisotrópicos más sencillos permiten aproximar al tensor de masas por sus
+componentes longitudinal y transversal\footnote{ https://www.iue.tuwien.ac.at/phd/mwagner/diss.html}
+en las direcciones principales de la red recíproca. 
+El problema radica entonces en ubicar correctamente los valles de energía dentro de la BZ
+para calcular las relaciones $E(\mathbf{k})$ necesarias para aproximar las masas longitudinal 
+$m_l(\mathbf{k})$ y transversal $m_t(\mathbf{k})$.
+
+\subsection{concentración de portadores en la circonia}
+
+En la Circonia, el equilibrio entre las  concentraciones de portadores 
+y de defectos puntuales determinará sus propiedades de transporte a escala macroscópica.  Las
+mismas pueden ser de vital importancia para determinar la capacidad del óxido protector
+de las aleaciones de Zr o incluso en dispositivos electrónicos basados en ZrO2. En particular
+la Circonia tetragonal (t-ZrO\textsubscript{2}) juega un papel primordial en la resistencia
+a la corrosión de las aleaciones de uso nuclear. 
+La concentración de portadores de carga puede calcularse en función de la temperatura y la densidad
+de estados efectiva de cada portador en la posición de sus extremos. 
+
+\begin{equation}\label{EqPortadoresT}
+  n_P = N_p \exp {\Bigl( -\frac{\Delta E_P}{k_B T} \Bigr)}
+\end{equation}
+donde $K_B$ es la constante de Boltzmann, $Delta E_P$ es la diferencia de energía 
+entre el extremo de la banda y la energía de Fermi, y  $N_P$ es la densidad de
+estados efectiva del portador, 
+
+\begin{equation}\label{EqCarrEffDens}
+  N_P = \Bigl( \frac{2 \pi m_{P}^{*} k_B T }{h} \Bigr)^{\frac{3}{2}}
+\end{equation}
+en donde se utiliza la masa efectiva del portador. Ahora bien, si las masas efectias pueden 
+aproximarse por sus componentes transversal y longitudinal, la masa efectiva 
+puede aproximarse por la masas de la densidad de estados y teineindo en cuenta la 
+multiplicidad $g$ de la basija correspondiente al extremo de la banda, 
+
+\begin{equation}\label{EqDOSEffMass}
+  \sqrt[3]{g_P^2 m_t ^2 m_l}
+\end{equation}
+
+Por último, entonces, la concentración intrínseca de cada portador $P$ puede tenerse como
+
+\begin{equation}\label{EqFullCarrierConcentration}
+  n_P = N_P \exp{ \Bigl( -\frac{\Delta E_P}{k_B T} \Bigr) } 
+\end{equation}
+

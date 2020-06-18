@@ -1,0 +1,94 @@
+\section{Resultados}
+
+\subsection{Topología del espectro de autovalores}
+En la Figura \ref{FigureIsosurfaces} se aprecian las isosuperficies del espectro de autovalores para
+una celda comprimida hasta  68.04$\AA^3$ (izquierda) , para la celda en equilibrio (centro), y para una celda
+expandida hasta 70.25$\AA^3$.  
+En la celda comprimida, las bandas 23 y 24 son las que tienen sus máximos en el nivel de Fermi, 
+y se eligió una isosuperficie para un valor 0.1 eV por debajo de dicho valor para apreciar sus vasijas de
+máximo, que se forman en los puntos $Z (0, 0, \pm0.5)$ y $A (\pm0.5,\pm 0.5, \pm0.5)$ Por su parte, la 
+banda 25 tiene su mínimo sobre el punto $\Gamma$ de la BZ, y se escogió una isosuperficie 0.2eV por 
+encima de de la $E_{cbm}$. El comportamiento de la banda de conducción no se altera para 
+el resto de los volumenes si bien se observará mas adelante que las masas efectivas de los electrones 
+cambian considerablemente. La multiplicidad de la vasija en $Z$ es de 2 mientras que las
+vasija en $A$ y $\Gamma$ son simples.
+
+\begin{figure}
+  \center
+  \includegraphics[width=0.32\textwidth]{../ZrO2-04-merged-23-24-25.png}
+  \includegraphics[width=0.32\textwidth]{../ZrO2-05-merged-23-24-25.png}
+  \includegraphics[width=0.32\textwidth]{../ZrO2-07-merged-24-25.png}
+  \caption{\protect\label{FigureIsosurfaces}
+  isosuperficies  para una estructura en compresión, equilibrio y expansión}
+\end{figure}
+
+Por otro lado, para el volumen de equilibrio se observa que nuenvamente las bandas  23 y 24 
+tienen sus máximos sobre el nivel de fermi, pero la banda 24 a demas de los puntos $Z$ y $A$
+presenta una vasija en el punto medio entre $\Gamma$ y $M (\pm0.5, \pm0.5, 0)$ con una 
+elongación que puede considerarse sobre el segmento $X (\pm0.5, 0, 0) \rightarrow X' (0, \mp0.5, 0)$ con 
+multiplicidad de 4. 
+
+Por último para las celdas expandidas, se observa que la banda 24 es la única observada en 
+la zona de valencia con una única vasija de máximo en el punto medio entre $\Gamma$ y $M$ de 
+similares características a lo descrito anteriormente.
+
+\subsection{Estructuras de Bandas}
+
+Con la información de la evolución de la topología del espectro de autovalores en 
+la BZ, se diseña un camino entre los puntos de simetría de la BZ para obtener las 
+relaciones  $E(\mathbf{k}$ necesarias para el cálculo de las masas transversales y
+longitudinales en cada vasija. Se toma un camino continio $\Gamma \rightarrow X \rightarrow
+M \rightarrow \Gamma \rightarrow Z \rightarrow A \rightarrow M$, al cual se le agrega el segmento 
+$ X \rightarrow X' $ para obtener la masa longitudinal de la vasija de la banda de valencia 
+en las estructuras expandidas.
+
+Puede observarse en todos los casos que el mínimo de la banda de conducción
+se encuentra en $\Gamma$ para la banda 25. 
+Puede observarse en la Figura \ref{FigureStructureBandWall} que en compresión
+el valence band maximum se encuentra en el punto $A$ con cercanía del máximo 
+local en $Z$, pero al llegar al equilibrio hay una cresta en el punto medio entre 
+$M$ y $\Gamma$  que se convertirá en el máximo en expansión. Notar que la cresta entre 
+$X$ y $X'$ corresponde al mismo punto, la primer cresta la componente transversal y 
+la última la longitudinal de la masa efectiva en este punto.
+
+\subsection{Masas Efectivas}
+
+Utilizando las relaciones $E(\mathbf{k})$ obtenidas, se utiliza el código 
+sumo \cite{MGanose2018} para calcular las masas efectivas sobre 
+cada segmento. Se utiliza un ajuste no parabólico con cinco puntos por cada 
+segmento para obtener los valore de masa que se observan en la tabala
+
+\begin{table}
+  \caption{
+    \protect\label{TableEffMassVol} Tabla Masas efectivas en función del volumen para electrones 
+    y huecos. Cuando se indican dos valores es porque SUMO calcula desde el máximo hacia 
+    el vértice, y debe tomarse el promedio.
+  }
+
+    \small
+  \begin{tabular*}{\textwidth}{|c|c|c|c|c|c|}
+    \hline
+vol   &h long         &h transvi       &multiplicidad&e long &e trans \\
+       &$X - X'$&  $M - \Gamma$               &    &$\Gamma - Z$ &$\Gamma -  X$\\
+     \hline
+70.12  & -11.42       &(-2.782+-2.799)/2   &  4  &   2.26   &   (0.629+0.671)/2 \\
+72.25  & -9.15        &(-3.016+-1.980)/2   &  4  &   2.35   &   (0.630+0.671)/2 \\ 
+74.41  & -8.36        &(-2.386+-2.643)/2   &  4  &   2.44   &   (0.674+0.635)/2 \\ 
+76.62  & -7.18        &(-2.076+-2.344)/2   &  4  &   2.49   &   (0.623+0.659)/2 \\
+78.88  & -6.92        &(-3.086+-1.487)/2   &  4  &   2.59   &   (0.625+0.659)/2 \\
+81.17  & -6.58        &(-2.234+-1.968)/2   &  4  &   2.70   &   (0.653+0.619)/2 \\
+\hline
+  \end{tabular*}
+\end{table}
+
+\begin{figure}
+
+  \includegraphics[width=\textwidth]{../make_valenceband_wall.pdf}
+  \caption{\label{FigureStructureBandWall} Evolucion de la estructura de bandas
+  en la zona de valencia en función del volúmen El volumen 5 corresponde a 
+  la estructura en equilibrio. Los volumenes entre 1 y 4 son en compresión 
+  mientras que de 6 a 9 son en expansión}
+\end{figure}
+
+
+
