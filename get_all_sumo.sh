@@ -25,7 +25,7 @@ do
   dir=ZrO2-new-$i
   echo "" >> $LOG
   echo $dir
-  banddir=$dir/BXXdir
+  banddir=$dir/BANDSdir
   echo $banddir  >> $LOG
   cd $banddir
     7za x vasprun.7z -y
