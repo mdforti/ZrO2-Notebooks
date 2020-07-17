@@ -18,11 +18,11 @@
 #      REVISION:  ---
 #===============================================================================
 current=$(pwd)
-	for dirs in ZrO2-new-??
+for dirs in ZrO2-new-{11,12}
 do
   cd $dirs
   remotedir=${dirs/0/}
   echo $remotedir
-  rsync -utpr --progress neurus:/home/mforti/stage/Bulk-ZrO2/$remotedir/BXXdir .
+  rsync -utpr --progress neurus:/home/mforti/stage/Bulk-ZrO2/$remotedir/BANDSdir .
   cd $current
 done

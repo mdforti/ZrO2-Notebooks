@@ -1,0 +1,47 @@
+\documentclass[border=10pt,multi]{standalone}
+\usepackage{asymptote}
+\standaloneenv{asy}
+
+\begin{document}
+\begin{asydef}
+  settings.prc=true;
+  settings.render=0;
+  settings.outformat = "pdf";
+  import three;
+  import settings;
+  leftbutton=new string[] {"rotate","zoom","shift","pan"};
+  middlebutton=new string[] {"menu"};
+  rightbutton=new string[] {"zoom/menu","rotateX","rotateY","rotateZ"};
+  wheelup=new string[] {"zoomin"};
+  wheeldown=new string[] {"zoomout"};
+\end{asydef}
+\begin{asy}
+  size(10cm,10cm);
+/*  perspective(3*(0,1,0));*/
+  currentprojection=orthographic(1, 0.3,0.1);
+  draw(O--1.5X, black, L=Label("$b_1$", position=EndPoint)); 
+  draw(O--Y, black, L=Label("$b_2$", position=EndPoint)); 
+  draw(O--0.5Z, black, L=Label("$b_3$", position=EndPoint)); 
+  draw(box((-0.5, -0.5, -0.25), (0.5, 0.5, 0.25)));
+  draw(O--0.5X, green);
+  draw(0.5X--0.5*(1,1,0), green);
+  draw(O--(0.5, 0.5, 0), green );
+  draw(0.5*(1,1,0)--(0.5, 0.5, 0.25), green);
+  draw((0.5, 0.5, 0.25)--0.25Z, green);
+  draw(0.25Z--O, green+linewidth(1pt));
+  draw(0.5X--0.5Y, blue);
+  /*Labels for Special Points*/
+  dot(O, red);
+  label("$\Gamma$", (0.0, -0.05, 0.05), black);
+  dot(0.5X, red);
+  label("$X$", 0.5*X+(0.0, 0.0, 0.05), black);
+  dot((0.5, 0.5, 0), red);
+  label("$M$", (0.5, 0.55, 0.), black);
+  dot((0.5, 0.5, 0.25), red);
+  label("$A$", (0.5, 0.5, 0.3), black);
+  dot(0.5Y, red);
+  label("$X'$", (0., 0.55, 0.05), black);
+  dot(0.25Z, red);
+  label("$Z$", 0.25Z+(0.0, -0.05, 0.0), black);
+\end{asy}
+\end{document}

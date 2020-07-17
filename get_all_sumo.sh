@@ -20,7 +20,8 @@
 WD=$(pwd)
 LOG=$WD/alldata-all.txt
 echo "28/05/2020 ==================== " > $LOG
-for i in 00 01 02 03 04 05 06 07 09 10
+#for i in 00 01 02 03 04 05 06 07 09 10
+for i in 11 12 
 do
   dir=ZrO2-new-$i
   echo "" >> $LOG
