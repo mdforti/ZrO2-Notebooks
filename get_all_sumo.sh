@@ -20,8 +20,7 @@
 WD=$(pwd)
 LOG=$WD/alldata-all.txt
 echo "28/05/2020 ==================== " > $LOG
-#for i in 00 01 02 03 04 05 06 07 09 10
-for i in 11 12 
+for i in 00 01 02 03 04 05 06 07 09 10 11 12
 do
   dir=ZrO2-new-$i
   echo "" >> $LOG
@@ -36,7 +35,7 @@ do
     vol=$(tar -xf OUT-OSZ-CON.tar.gz OUTCAR -O | grep "volume" | tail -1 | awk '{print $NF}')
     sumo-bandstats -f vasprun.xml
     sumo-bandplot -f vasprun.xml --prefix $dir --project Zr.d,O.p
-    sumo-bandplot -f vasprun.xml --prefix 'hole-detail' --project Zr.d,O.p --ymin -1 --ymax 0.5 --band-edges
+    sumo-bandplot -f vasprun.xml --prefix 'hole-detail' --project O.p,Zr.d --ymin -1 --ymax 0.2
     rm KPOINTS vasprun.xml
   cd $WD  
   cat $banddir/sumo-bandstats.log >> $LOG

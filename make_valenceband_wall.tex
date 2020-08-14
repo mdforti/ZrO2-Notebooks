@@ -1,29 +1,75 @@
 \documentclass{standalone}
 \usepackage{tikz}
 \usepackage{graphics}
-
+\newcounter{dir}
 \begin{document}
 
 \begin{tikzpicture}
-  \foreach \d in {3,2,1} {
-    \node at ( 5*\d, 0) 
-    {\includegraphics[width=5.4cm, trim=0 0 3cm 0, clip]{./ZrO2-new-0\d/BANDSdir/hole-detail_band.pdf} };
-    \node at ( 5*\d, +2.5 ) { volume = \d} ;
+  \pgfkeys{/pgf/number format/.cd,int detect}
+  \pgfmathsetbasenumberlength{2}
+  \foreach \e in {0,1,2} { 
+    \foreach \d  in {3,2,1,0} { %[evaluate=\d as \n using \pgfmathparse{\e*4+\d}]
+      \pgfmathsetcounter{dir}{\e*4+\d}
+      \pgfmathbasetodec\dir{\the\value{dir}}{10}
+      \node at (7*\d-7, 5.5*\e) {
+	    \includegraphics[width=7cm, height=5cm, trim=3.2cm 1.1cm 3cm 0, clip]
+	    {./ZrO2-new-\dir/BANDSdir/hole-detail_band.pdf} 
+      };
+      \node at (7*\d-7, 5.5*\e+2.5) { volume = \dir };
+      % la recetapara completar con ceros a la izquerda la saqué de acá:
+      % https://tex.stackexchange.com/questions/462563/tikz-zero-padding-node-labels 
+    }
+    \path (-11, \e*5.5-2.3) -- (-11, \e*5.5+2.3) 
+      node[pos=0]   {\large $-1.00$}
+      node[pos=1/6] {\large $-0.75$}
+      node[pos=2/6] {\large $-0.50$}
+      node[pos=3/6] {\large $-0.25$}
+      node[pos=4/6] {\large $-0.00$}
+      node[pos=5/6] {\large $-0.25$}
+      node[pos=6/6] {\large $-0.50$};
+    }
+    \foreach \d in {3,2,1,0} {
+    \node at (7*\d-7, -2.8) {
+      \begin{tikzpicture}
+        \path (-3.5, -1.5) -- (3.5, -1.5)
+           node[pos=0, anchor=north west]   {\large $X'$}
+           node[pos=0.16, anchor=north]     {\large $X|\Gamma$}
+           node[pos=0.28, anchor=north]     {\large $X$}
+           node[pos=0.4, anchor=north]      {\large $M$}
+           node[pos=0.55, anchor=north]     {\large $\Gamma$}
+           node[pos=0.63, anchor=north]     {\large $Z$}
+           node[pos=0.77, anchor=north]     {\large $A$}
+           node[pos=0.86, anchor=north]     {\large $M|Z$}
+           node[pos=1.0, anchor=north east] {\large $R$}
+           ;
+      \end{tikzpicture}
+    };
   }
-  \foreach \d in {6,5,4} {
-    \node at ( 5*\d -5*3, -5 )
-    { \includegraphics[width=5.4cm, trim=0 0 3cm 0, clip]{./ZrO2-new-0\d/BANDSdir/hole-detail_band.pdf} };
-    \node at ( 5*\d -5*3, -2.5 ) { volume = \d} ;
-  }
-  \foreach \d in {9,8,7} {
-    \node at ( 5*\d -5*6, -10 ) 
-    { \includegraphics[width=5.4cm, trim=0 0 3cm 0, clip]{./ZrO2-new-0\d/BANDSdir/hole-detail_band.pdf} };
-    \node at ( 5*\d -5*6, -7.5 ) { volume = \d} ;
-  }
-%  \foreach \d in {12, 11, 10} {
-%    \node at ( 5*\d -5*9, -15 )
-%    { \includegraphics[width=5.4cm, trim=0 0 3cm 0, clip]{./ZrO2-new-\d/BANDSdir/hole-detail_band.pdf} };
-%  }
+  \node[rotate=90]  at (-13, 5) {\Huge Energy (eV)};
+  \node  at (3, -4) {\Huge k-path};
 \end{tikzpicture}
+%      \node at (\x, 2.5) { volume = \d} ;
+%      at ( \x, \y ) {
+%	\begin{tikzpicture}[baseline]
+%	  \node let at (0,0) {
+%	    \includegraphics[width=7cm, height=5cm, trim=3.2cm 1.1cm 3cm 0, clip]
+%	    {./ZrO2-new-0\t/BANDSdir/hole-detail_band.pdf} 
+%	    };
+%	\end{tikzpicture}
+  %  \node at (7*\d, -2.8) {
+  %    \begin{tikzpicture}
+  %      \path (-3.5, -1.5) -- (3.5, -1.5)
+  %         node[pos=0, anchor=north west] {$X'$}
+  %         node[pos=0.16, anchor=north] {$X|\Gamma$}
+  %         node[pos=0.28, anchor=north] {$X$}
+  %         node[pos=0.4, anchor=north] {$M$}
+  %         node[pos=0.55, anchor=north] {$\Gamma$}
+  %         node[pos=0.63, anchor=north] {$Z$}
+  %         node[pos=0.77, anchor=north] {$A$}
+  %         node[pos=0.86, anchor=north] {$M|Z$}
+  %         node[pos=1.0, anchor=north east] {$R$}
+  %         ;
+  %    \end{tikzpicture}
+  %   };
 \end{document}
 
