@@ -9,8 +9,8 @@ plt.rc('font', size=14)
 Vo = 70.4
 DP = -19.76/10
 data = pd.read_csv('gaps.dat', sep='\s+')
-plt.plot(data['preassure'][1:-2]/10+DP, data['Indirect-finger'][1:-2], '--ok', label='Indirect')
-plt.plot(data['preassure'][1:-2]/10+DP, data['Direct'][1:-2], '--^k', label='Direct')
+plt.plot(data['preassure'][2:-2]/10+DP, data['Indirect-finger'][2:-2], '--ok', label='Indirect')
+plt.plot(data['preassure'][2:-2]/10+DP, data['Direct'][2:-2], '--^k', label='Direct')
 plt.legend()
 #plt.xlabel(r'$V / V_o$')
 plt.xlabel(r'$P (GPa)$')
