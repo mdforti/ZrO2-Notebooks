@@ -30,19 +30,31 @@ def reverse(x):
 
 fig, ax = plt.subplots(constrained_layout=True)
 
-ax.plot(MASAS['p'], MASAS['dosm_h'], 'o--k', label='holes')
+ax.plot(MASAS['vol'], MASAS['dosm_h'], 'o--k', label='holes')
 
-ax.set_xlabel('Preassure(GPa)', fontsize=14)
+ax.set_xlabel('$V/V_0$', fontsize=14)
 #ax.set_title(r'$m^{*}/m_e = \sqrt[3]{m_l m_t g}$', fontsize=14) 
-ax.set_ylabel('holes', fontsize=14)
+ax.set_ylabel('$m_{holes}/m_e$', fontsize=14)
 
 ax2 = ax.twinx()
 
-ax_up = ax.secondary_xaxis ('top', functions = (forward, reverse))
-ax_up.set_xlabel(r'$V / V_0$')
-l2 = ax2.plot(MASAS['p'], MASAS['dosm_e'], 'd--b', label='electrons')[0]
-ax2.set_ylabel('electrons', color=l2.get_color(), fontsize=14)
+l2 = ax2.plot(MASAS['vol'], MASAS['dosm_e'], 'd--b', label='m_{electrons}')[0]
+ax2.set_ylabel('$m_{electrons}/m_{e}$', color=l2.get_color(), fontsize=14)
+#ax.annotate(
+#         '',
+#         xy=(0.5,0.8), 
+#         xycoords='figure fraction', 
+#         xytext=(50, 0), 
+#         textcoords='offset points',
+#         arrowprops=dict(facecolor='blue', shrink=0.5, color='blue', width=0.5))
+ax.arrow(0.98, 10, -0.01, 0, width=0.05, fc='k', head_length=0.005, color='k')
+ax2.arrow(1.01, 0.98, 0.01, 0, width=0.0005, head_length=0.005, fc='b', color='b')
+
+ax_up = ax.secondary_xaxis ('top', functions = (reverse, forward))
+ax_up.set_xlabel(r'Pressure(GPa)')
+
 fig.savefig('new_dosmas.pdf')
+
 
 #MDF-COMMENT atencion, del archivo borre estas lines 
 
